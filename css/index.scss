@@ -1,0 +1,220 @@
+$colorBlue: #1a1a2e;
+$colorWhite: white;
+$colorRed:#e94560;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Umumiy uslublar
+body {
+    font-family: 'Arial', sans-serif; // Shrift
+    background-color: #1a1a2e; // Fon rangi
+    color: white; // Matn rangi
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    text-shadow: none;
+  }
+  
+  // Header qismi
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  
+    .nav {
+      display: flex;
+      list-style: none;
+  
+      li {
+        margin: 0 15px;
+  
+        a {
+          color: white;
+          text-decoration: none;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #e94560; // Hover holatidagi rang
+          }
+        }
+      }
+
+      .btn{
+        color: white;
+        border: 1px solid blue;
+        background-color: #1a1a2e;
+        text-align: center;
+        padding: px;
+      }
+    }
+  }
+  
+  // Hero qismi
+  .hero {
+    text-align: left;
+    padding: 50px 0;
+    
+    .container{
+        margin: 20px;
+        padding: 20px;display: flex;
+
+        .build {
+            padding: 50px;
+            margin: 50px;
+        }
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+  
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+  
+        .btn1 {
+            background-color:burlywood; // Tugma rangi
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+
+        .btn2 {
+            // background-color:burlywood; // Tugma rangi
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        &:hover {
+          background-color: #d83e54; // Hover holatidagi tugma rangi
+        }
+      }
+    }
+  }
+  
+  // Xususiyatlar bo'limi
+  .features {
+    justify-content: space-around;
+    padding: 5px 0;
+    
+    .container{
+        display: flex;
+    }
+
+    .feature {
+    //   background-color: #162447; // Har bir xususiyatning fon rangi
+      padding: 5px;
+      border-radius: 5px;
+      text-align: center;
+      width: 73%;
+      
+  
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .box{
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+    
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        // border: 1px solid red;
+        padding: 20px 0;
+
+        .box {
+            width: calc(100% / 3 - 20px);
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+  }
+  .contener4{
+    background-color: white;
+    color: black;
+    display: flex;
+    text-align: center;
+
+    .bet1{
+        padding: 50px;
+        margin: 30px;
+    }
+    .bet2{
+        text-align: center;
+        padding: 50px;
+        margin: 30px;
+    }
+  }
+  .message{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    background-color: tan;
+    color: black;
+  }
+  
+  // Footer
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f3460; // Pastki kolonkani rang
+    display: flex;
+
+    .container1{
+        padding: 10px;
+        margin: 10px;
+
+        .message{
+            display: flex;
+
+            .email{
+                margin: 10px;
+                padding: 20px;
+            }
+            .call{
+                margin: 10px;
+                padding: 20px;
+            }
+        }
+    }
+    .container2{
+        padding: 10px;
+        margin: 10px;
+    }
+  }
